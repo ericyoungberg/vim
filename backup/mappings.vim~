@@ -31,9 +31,6 @@ nnoremap <silent> gj :wincmd j<CR>
 nnoremap <silent> gk :wincmd k<CR>
 nnoremap <silent> gl :wincmd l<CR>
 
-nnoremap <silent> bn :bn<CR>
-nnoremap <silent> bp :bp<CR>
-
 
 " Movement
 " ----------------->

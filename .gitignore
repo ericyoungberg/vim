@@ -1,4 +1,7 @@
 .DS_Store
+backup/
+swap/
+undo/
 
 # Save vundle for ease of use
 !bundle/

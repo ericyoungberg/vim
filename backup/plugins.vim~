@@ -42,7 +42,7 @@ let g:NERDTreeMinimalUI = 1
 " Close Vim if NERDTree is the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " Open NERDTree on Startup
-autocmd VimEnter * NERDTree | wincmd p
+autocmd VimEnter * NERDTree
 
 
 " Tabular

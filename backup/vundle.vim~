@@ -26,6 +26,7 @@ Plugin 'mattn/emmet-vim'			" Emmet.io
 Plugin 'sk1418/Join'				" Join lines together better
 " UI		
 Plugin 'scrooloose/nerdtree'			" Tree Navigation
+Plugin 'nathanaelkane/vim-indent-guides'	" Read the name
 Plugin 'bling/vim-airline'			" Tabs
 Plugin 'tomasr/molokai'				" Color scheme
 " Auto Helpers
