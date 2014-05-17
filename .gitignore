@@ -1,5 +1,7 @@
 .DS_Store
-bundle
 
 # Save vundle for ease of use
+!bundle/
+
+bundle/*
 !bundle/Vundle.vim/
