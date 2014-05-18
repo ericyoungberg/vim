@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Install file for the Vim config
+
+
+echo ""
+echo "Installing Vim Config..."
+echo ""
+
+# Install Vundle
+echo "----- Installing Vundle"
+git clone https://github.com/gmarik/Vundle.vim ./bundle/Vundle.vim
+
+# Install Plugins
+echo ""
+echo "----- Installing Plugins"
+vim +PluginInstall +qall
+
+# Make directories for backups, swap, and undo files
+echo ""
+echo "----- Creating directories"
+mkdir undo backup swap
+
+# Finish installation
+echo ""
+echo "All done!"
+echo ""
+exit

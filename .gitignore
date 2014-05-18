@@ -2,9 +2,4 @@
 backup
 swap
 undo
-
-# Save vundle for ease of use
-!bundle
-
-bundle/*
-!bundle/Vundle.vim/*
+bundle
