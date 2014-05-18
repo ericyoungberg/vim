@@ -1,10 +1,10 @@
 .DS_Store
-backup/
-swap/
-undo/
+backup
+swap
+undo
 
 # Save vundle for ease of use
-!bundle/
+!bundle
 
 bundle/*
 !bundle/Vundle.vim/*
