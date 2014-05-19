@@ -27,7 +27,7 @@ Plugin 'sk1418/Join'				" Join lines together better
 " UI		
 Plugin 'scrooloose/nerdtree'			" Tree Navigation
 Plugin 'bling/vim-airline'			" Tabs
-Plugin 'tomasr/molokai'				" Color scheme
+Plugin 'nanotech/jellybeans.vim'  " Color scheme
 " Auto Helpers
 Plugin 'Raimondi/delimitMate'			" Auto close quotes, brackets, etc.
 Plugin 'mutewinter/vim-autoreadwatch'		" Reload the buffers when changed on disk

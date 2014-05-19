@@ -5,11 +5,10 @@
 
 " Color
 " --------------->
-colorscheme molokai
+colorscheme jellybeans
 if $TERM =~ "-256color"
 	set t_Co=256
 endif
-
 
 " File Locations
 " --------------->
