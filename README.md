@@ -1,5 +1,5 @@
 #Vim Config
-_v2.1_
+_v2.2_
 
 My Vim config.
 

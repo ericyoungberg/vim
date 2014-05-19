@@ -21,6 +21,11 @@ echo ""
 echo "----- Creating directories"
 mkdir undo backup swap
 
+# Expose the .vimrc file
+echo ""
+echo "----- Exposing .vimrc"
+mv .vimrc ~/.vimrc
+
 # Finish installation
 echo ""
 echo "All done!"
