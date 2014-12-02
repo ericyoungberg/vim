@@ -5,7 +5,7 @@
 
 " Color
 " --------------->
-colorscheme monokai
+colorscheme jellybeans
 
 " File Locations
 " --------------->
