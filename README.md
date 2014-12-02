@@ -7,5 +7,5 @@ Heavily inspired by [mutewinter's](https://github.com/mutewinter/dot_vim) **dot_
 
 ##Installation
 
-1. Just `cp` the __.vimrc__ from the __.vim__ folder into your home folder.
-2. Run the command `vim +PluginInstall +qall`
+1. `cd` into the *.vim* folder and then enter `./install`. Just press ENTER through each menu
+2. Run the command `vim +PluginInstall` it did not run on its own
