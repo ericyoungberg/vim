@@ -5,4 +5,4 @@ undo
 
 # Keep molokai but remove the other plugins
 bundle/*
-!bundle/molokai/
+!bundle/molokai/colors/molokai.vim
