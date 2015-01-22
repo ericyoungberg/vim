@@ -2,4 +2,7 @@
 backup
 swap
 undo
-bundle
+
+# Keep molokai but remove the other plugins
+bundle/*
+!bundle/molokai/

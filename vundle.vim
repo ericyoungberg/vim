@@ -18,29 +18,41 @@ Plugin 'gmarik/vundle'
 " ----------->
 
 " Tools
-Plugin 'kien/ctrlp.vim'				" Search tool
-Plugin 'tpope/vim-surround'			" Makes quotes, tags, etc.
-Plugin 'godlygeek/tabular'			" Tab/align fixing
-Plugin 'vim-scripts/scratch.vim'		" Scratch buffer
-Plugin 'mattn/emmet-vim'			" Emmet.io
-Plugin 'sk1418/Join'				" Join lines together better
+Plugin 'kien/ctrlp.vim'				    " Search tool
+Plugin 'tpope/vim-surround'			  " Makes quotes, tags, etc.
+Plugin 'godlygeek/tabular'			  " Tab/align fixing
+Plugin 'mattn/emmet-vim'			    " Emmet.io
+Plugin 'sk1418/Join'				      " Join lines together better
+
 " UI		
 Plugin 'scrooloose/nerdtree'			" Tree Navigation
-Plugin 'bling/vim-airline'			" Tabs
-Plugin 'nanotech/jellybeans.vim'  " Color scheme
+Plugin 'bling/vim-airline'			  " Tabs
+Plugin 'tomasr/molokai'           " Color Scheme
+
 " Auto Helpers
-Plugin 'Raimondi/delimitMate'			" Auto close quotes, brackets, etc.
+Plugin 'Raimondi/delimitMate'			      " Auto close quotes, brackets, etc.
 Plugin 'mutewinter/vim-autoreadwatch'		" Reload the buffers when changed on disk
+
+
 " Language Specific
+" ------------------------->
+
 " JavaScript
-Plugin 'pangloss/vim-javascript'		" Better JavaScript
-Plugin 'leshill/vim-json'			" JSON support
+Plugin 'pangloss/vim-javascript'	" Better JavaScript
+Plugin 'leshill/vim-json'			    " JSON support
+
 " HTML
-Plugin 'vim-scripts/indenthtml.vim'     " Better indent HTML script
+Plugin 'vim-scripts/indenthtml.vim'       " Better indent HTML script
 Plugin 'mustache/vim-mustache-handlebars'	" Support for Handlebars/Mustache
-Plugin 'othree/html5.vim'			" HTML5 omnicomplete and syntax
+Plugin 'othree/html5.vim'			            " HTML5 omnicomplete and syntax
+
 " CSS
-Plugin 'tpope/vim-haml'				" Syntax for Haml and Sass
+Plugin 'tpope/vim-haml'				        " Syntax for Haml and Sass
 Plugin 'mutewinter/vim-css3-syntax'		" Better CSS3 syntax support
+
+" C++
+Plugin 'octol/vim-cpp-enhanced-highlight' " Better syntax highlighting for C++
+
 " Markdown
 Plugin 'plasticboy/vim-markdown'		" Markdown support
+

@@ -34,6 +34,9 @@ let g:syntastic_full_redraws = 1
 " Emmet
 " --------------------->
 
+" Molokai
+" --------------------->
+
 " NERDTree
 " --------------------->
 nnoremap <leader>nn :NERDTreeToggle<CR>

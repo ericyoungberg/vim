@@ -5,7 +5,8 @@
 
 " Color
 " --------------->
-colorscheme jellybeans
+syntax enable
+colorscheme molokai
 
 " File Locations
 " --------------->
