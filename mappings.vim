@@ -31,8 +31,20 @@ nnoremap <silent> gj :wincmd j<CR>
 nnoremap <silent> gk :wincmd k<CR>
 nnoremap <silent> gl :wincmd l<CR>
 
+" Swap buffer
 nnoremap <silent> bn :bn<CR>
 nnoremap <silent> bp :bp<CR>
+
+" Delete adjacent windows
+nnoremap <silent> bh :wincmd h<CR> :q<CR>
+nnoremap <silent> bj :wincmd j<CR> :q<CR>
+nnoremap <silent> bk :wincmd k<CR> :q<CR>
+nnoremap <silent> bl :wincmd l<CR> :q<CR>
+
+
+" Buffer Sizing " ----------------->
+nnoremap <silent> <C-LEFT> 5<C-w><
+nnoremap <silent> <C-RIGHT> 5<C-w>>
 
 
 " Movement
