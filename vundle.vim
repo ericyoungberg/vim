@@ -26,6 +26,7 @@ Plugin 'sk1418/Join'				      " Join lines together better
 
 " UI		
 Plugin 'scrooloose/nerdtree'			" Tree Navigation
+Plugin 'scrooloose/syntastic'     " A bunch of syntax tools
 Plugin 'bling/vim-airline'			  " Tabs
 Plugin 'tomasr/molokai'           " Color Scheme
 
