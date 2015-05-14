@@ -13,5 +13,7 @@ if has("autocmd")
     " Fix accidental indentation of HTML files
     autocmd FileType html setlocal indentkeys-=*<Return>
 
+    autocmd FileType php set filetype=phtml
+
   augroup END
 endif

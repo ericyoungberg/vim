@@ -25,17 +25,13 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': [] }
 let g:syntastic_html_checkers = ['handlebars']
+let g:syntastic_scss_checkers = ['']
 
 " Hat tip http://git.io/SPIBfg
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_full_redraws = 1
 
-" Emmet
-" --------------------->
-
-" Molokai
-" --------------------->
 
 " NERDTree
 " --------------------->
@@ -109,6 +105,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
 
 let g:syntastic_always_populate_loc_list = 1

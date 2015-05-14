@@ -57,3 +57,12 @@ Plugin 'octol/vim-cpp-enhanced-highlight' " Better syntax highlighting for C++
 " Markdown
 Plugin 'plasticboy/vim-markdown'		" Markdown support
 
+" PHP
+Plugin 'StanAngeloff/php.vim'       " PHP syntax highlighting
+Plugin 'xsbeats/vim-blade'          " Blade templating support
+
+" Rust
+Plugin 'wting/rust.vim'             " Rust syntax highlighting
+
+" Elixir
+Plugin 'elixir-lang/vim-elixir'     " Elixir syntax highlighting
