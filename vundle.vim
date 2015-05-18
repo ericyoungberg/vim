@@ -41,6 +41,7 @@ Plugin 'mutewinter/vim-autoreadwatch'		" Reload the buffers when changed on disk
 " JavaScript
 Plugin 'pangloss/vim-javascript'	" Better JavaScript
 Plugin 'leshill/vim-json'			    " JSON support
+Plugin 'kchmck/vim-coffee-script' " Syntax for Coffeescript
 
 " HTML
 Plugin 'vim-scripts/indenthtml.vim'       " Better indent HTML script
@@ -49,6 +50,7 @@ Plugin 'othree/html5.vim'			            " HTML5 omnicomplete and syntax
 
 " CSS
 Plugin 'tpope/vim-haml'				        " Syntax for Haml and Sass
+Plugin 'groenewege/vim-less'          " Syntax for Less
 Plugin 'mutewinter/vim-css3-syntax'		" Better CSS3 syntax support
 
 " C++
