@@ -66,5 +66,5 @@ Plugin 'xsbeats/vim-blade'          " Blade templating support
 " Rust
 Plugin 'wting/rust.vim'             " Rust syntax highlighting
 
-" Elixir
-Plugin 'elixir-lang/vim-elixir'     " Elixir syntax highlighting
+" Ruby
+Plugin 'vim-ruby/vim-ruby'          " Ruby tooling
