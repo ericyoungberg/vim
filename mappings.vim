@@ -68,9 +68,6 @@ inoremap jK <Esc>
 " Toggle spelling mode
 nnoremap <silent> <leader>s :set spell!<CR>
 
-" Switch to last buffer
-nnoremap <leader>, :e#<CR>
-
 " Underline the current line with '-'
 nnoremap <silent> <leader>ul :t.\|s/./-/\|:nohls<cr>
 
@@ -79,6 +76,9 @@ nnoremap <silent> <leader>uul :t.\|s/./=/\|:nohls<cr>
 
 " Close current window
 nnoremap <silent> <leader>sc :close<CR>
+
+" Toggle List mode to show tabs
+nnoremap <silent> <leader>l :set invlist<CR>
 
 
 " Typo Fixes
