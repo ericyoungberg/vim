@@ -26,7 +26,7 @@ set cmdheight=2
 set encoding=utf-8
 set noshowmode
 set title
-set colorcolumn=80
+set colorcolumn=0
 highlight ColorColumn ctermbg=235 ctermfg=50 guibg=#666666
 
 

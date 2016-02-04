@@ -22,6 +22,11 @@ nnoremap L $
 nnoremap go o<Esc>k
 nnoremap gO O<Esc>j
 
+" Force quit
+nnoremap QQ :qall!<CR>
+inoremap QQ <Esc>:qall!<CR>
+vnoremap QQ <Esc>:qall!<CR>
+
 
 " Window Movement
 " ----------------->
@@ -79,6 +84,9 @@ nnoremap <silent> <leader>sc :close<CR>
 
 " Toggle List mode to show tabs
 nnoremap <silent> <leader>l :set invlist<CR>
+
+" Toggle 80 column delimiter
+nnoremap <silent> <leader>c :call Toggle80Column()<CR>
 
 
 " Typo Fixes

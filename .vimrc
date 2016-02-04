@@ -15,6 +15,7 @@ filetype plugin indent on
 " ----------------->
 
 source ~/.vim/config.vim 		" Main Vim configuration
+source ~/.vim/functions.vim " Functions in vimscript
 source ~/.vim/mappings.vim		" Plugin independant hotkeys
 source ~/.vim/plugins.vim		" Plugin Specific preferences
 source ~/.vim/autocommands.vim    " Auto Commands
