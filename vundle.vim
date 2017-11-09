@@ -18,7 +18,6 @@ Plugin 'gmarik/vundle'
 " ----------->
 
 " Tools
-Plugin 'kien/ctrlp.vim'				    " Search tool
 Plugin 'tpope/vim-surround'			  " Makes quotes, tags, etc.
 Plugin 'godlygeek/tabular'			  " Tab/align fixing
 Plugin 'mattn/emmet-vim'			    " Emmet.io
@@ -41,7 +40,6 @@ Plugin 'mutewinter/vim-autoreadwatch'		" Reload the buffers when changed on disk
 " JavaScript
 Plugin 'pangloss/vim-javascript'	" Better JavaScript
 Plugin 'leshill/vim-json'			    " JSON support
-Plugin 'kchmck/vim-coffee-script' " Syntax for Coffeescript
 
 " HTML
 Plugin 'vim-scripts/indenthtml.vim'       " Better indent HTML script
@@ -50,7 +48,6 @@ Plugin 'othree/html5.vim'			            " HTML5 omnicomplete and syntax
 
 " CSS
 Plugin 'tpope/vim-haml'				        " Syntax for Haml and Sass
-Plugin 'groenewege/vim-less'          " Syntax for Less
 
 " C++
 Plugin 'octol/vim-cpp-enhanced-highlight' " Better syntax highlighting for C++
@@ -60,10 +57,6 @@ Plugin 'plasticboy/vim-markdown'		" Markdown support
 
 " PHP
 Plugin 'StanAngeloff/php.vim'       " PHP syntax highlighting
-Plugin 'xsbeats/vim-blade'          " Blade templating support
-
-" Rust
-Plugin 'wting/rust.vim'             " Rust syntax highlighting
 
 " Ruby
 Plugin 'vim-ruby/vim-ruby'          " Ruby tooling

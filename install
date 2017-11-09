@@ -14,7 +14,7 @@ git clone https://github.com/gmarik/Vundle.vim ./bundle/Vundle.vim
 # Install Plugins
 echo ""
 echo "----- Installing Plugins"
-vim +PluginInstall +qall
+vim +PluginInstall +qall &
 
 # Make directories for backups, swap, and undo files
 echo ""
@@ -24,7 +24,7 @@ mkdir undo backup swap
 # Expose the .vimrc file
 echo ""
 echo "----- Exposing .vimrc"
-mv .vimrc ~/.vimrc
+ln -s .vimrc $HOME/.vimrc
 
 # Finish installation
 echo ""
