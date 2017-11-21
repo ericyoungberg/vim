@@ -24,7 +24,7 @@ mkdir undo backup swap
 # Expose the .vimrc file
 echo ""
 echo "----- Exposing .vimrc"
-ln -s .vimrc $HOME/.vimrc
+ln -s $HOME/.vim/.vimrc $HOME/.vimrc
 
 # Finish installation
 echo ""
