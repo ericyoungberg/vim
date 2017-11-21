@@ -6,7 +6,8 @@
 " Color
 " --------------->
 syntax enable
-colorscheme molokai
+colorscheme phoenix
+PhoenixBlue
 
 " File Locations
 " --------------->
