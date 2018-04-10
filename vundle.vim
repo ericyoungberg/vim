@@ -40,6 +40,7 @@ Plugin 'mutewinter/vim-autoreadwatch'		" Reload the buffers when changed on disk
 " JavaScript
 Plugin 'pangloss/vim-javascript'	" Better JavaScript
 Plugin 'leshill/vim-json'			    " JSON support
+Plugin 'mxw/vim-jsx'              " JSX support
 
 " HTML
 Plugin 'vim-scripts/indenthtml.vim'       " Better indent HTML script

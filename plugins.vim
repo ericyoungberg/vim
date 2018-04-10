@@ -88,6 +88,11 @@ let g:airline_section_z = '%3p%% %#__accent_bold#%4l%#__restore__#:%3'
 let g:airline_section_z = '%3p%% %{substitute(line("."), "\\v(\\d)((\\d\\d\\d)+\\d@!)@=", "\\1,", "g")}|%{substitute(line("$"), "\\v(\\d)((\\d\\d\\d)+\\d@!)@=", "\\1,", "g")}'
 
 
+" vim-jsx
+" ---------------------->
+let g:jsx_ext_required = 1
+
+
 " indenthtml
 " ---------------------->
 let g:html_indent_inctags = "html,body,head,tbody"
@@ -98,6 +103,7 @@ let g:html_indent_style1 = "inc"
 " vim-markdown
 " ---------------------->
 let g:vim_markdown_folding_disabled=1
+
 
 " Syntastic
 " ---------------------->
