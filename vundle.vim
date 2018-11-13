@@ -17,13 +17,15 @@ Plugin 'gmarik/vundle'
 " Plugins
 " ----------->
 
+Plugin 'nightsense/vimspectr'     " Color scheme for light
+
 " Tools
 Plugin 'tpope/vim-surround'			  " Makes quotes, tags, etc.
 Plugin 'godlygeek/tabular'			  " Tab/align fixing
 Plugin 'mattn/emmet-vim'			    " Emmet.io
 Plugin 'sk1418/Join'				      " Join lines together better
 
-" UI		
+" UI
 Plugin 'scrooloose/nerdtree'			" Tree Navigation
 Plugin 'scrooloose/syntastic'     " A bunch of syntax tools
 Plugin 'bling/vim-airline'			  " Tabs

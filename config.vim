@@ -6,6 +6,11 @@
 " Color
 " --------------->
 syntax enable
+
+" Light color scheme
+"colorscheme vimspectr30-light
+
+" Dark color scheme
 colorscheme phoenix
 PhoenixBlue
 
@@ -33,7 +38,6 @@ highlight ColorColumn ctermbg=235 ctermfg=50 guibg=#666666
 
 " Behaviors
 " ---------------->
-syntax enable
 set autoread
 set wildmenu
 set hidden
@@ -55,6 +59,7 @@ set undodir=~/.vim/undo//
 
 " Text Format
 " ----------------->
+let g:python_recommended_style=0
 set tabstop=2
 set backspace=indent,eol,start
 set shiftwidth=2

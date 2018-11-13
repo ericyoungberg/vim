@@ -8,7 +8,7 @@ if has("autocmd")
     autocmd BufNewFile,BufEnter * set formatoptions-=o
 
     " Remove trailing whitespaces
-    autocmd BufWritePre *.html,*.js,*.scss,*.hbs,*.md,*.vim silent! :StripTrailingWhiteSpace
+    autocmd BufWritePre *.html,*.js,*.scss,*.hbs,*.vim,*.rb,*.jsx,*.php silent! :StripTrailingWhiteSpace
 
     " Fix accidental indentation of HTML files
     autocmd FileType html setlocal indentkeys-=*<Return>
