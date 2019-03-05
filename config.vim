@@ -60,9 +60,9 @@ set undodir=~/.vim/undo//
 " Text Format
 " ----------------->
 let g:python_recommended_style=0
-set tabstop=2
+set tabstop=4
 set backspace=indent,eol,start
-set shiftwidth=2
+set shiftwidth=4
 set cindent
 set autoindent
 set smarttab
