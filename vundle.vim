@@ -28,8 +28,8 @@ Plugin 'sk1418/Join'				      " Join lines together better
 " UI
 Plugin 'scrooloose/nerdtree'			" Tree Navigation
 Plugin 'scrooloose/syntastic'     " A bunch of syntax tools
-Plugin 'bling/vim-airline'			  " Tabs
-Plugin 'tomasr/molokai'           " Color Scheme
+Plugin 'vim-airline/vim-airline'			  " Tabs
+Plugin 'vim-airline/vim-airline-themes'
 
 " Auto Helpers
 Plugin 'Raimondi/delimitMate'			      " Auto close quotes, brackets, etc.
