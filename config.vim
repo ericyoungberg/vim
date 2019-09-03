@@ -12,7 +12,7 @@ syntax enable
 
 " Dark color scheme
 colorscheme phoenix
-PhoenixOrange
+PhoenixBlue
 
 " File Locations
 " --------------->

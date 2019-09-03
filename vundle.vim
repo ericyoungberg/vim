@@ -55,6 +55,12 @@ Plugin 'tpope/vim-haml'				        " Syntax for Haml and Sass
 " C++
 Plugin 'octol/vim-cpp-enhanced-highlight' " Better syntax highlighting for C++
 
+" C#
+Plugin 'OrangeT/vim-csharp'     " Better syntax highlighting for C#
+
+" GLSL
+Plugin 'vim-scripts/ShaderHighLight'            " Shader syntax
+
 " Markdown
 Plugin 'plasticboy/vim-markdown'		" Markdown support
 
