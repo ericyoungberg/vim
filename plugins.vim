@@ -40,7 +40,7 @@ nnoremap <leader>nf :NERDTreeFind<CR>
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeChDirMode = 1
 let g:NERDTreeMinimalUI = 1
-let g:NERDTreeIgnore = ['\.egg-info$', '__pycache__$']
+let g:NERDTreeIgnore = ['\.egg-info$', '__pycache__$', '\.meta$', '\.sass-cache$']
 " Close Vim if NERDTree is the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " Open NERDTree on Startup
@@ -57,25 +57,10 @@ nnoremap <Leader>t, :Tabularize comma<CR>
 vnoremap <Leader>t, :Tabularize comma<CR>
 
 
-" ctrlp.vim
-" ---------------------->
-" Ensure Ctrl-P isn't bound by default
-let g:ctrlp_map = ''
-
-" Ensure max height isn't too large. (for performance)
-let g:ctrlp_max_height = 10
-
-" Leader Commands
-nnoremap <leader>t :CtrlPRoot<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>u :CtrlPCurFile<CR>
-nnoremap <leader>m :CtrlPMRUFiles<CR>
-
-
 " Airline
 " ---------------------->
-let g:airline_theme='deus'
-let g:airline_powerline_fonts = 0
+let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
 let g:airline_detect_modified = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_mode_map = {'n' : 'N', 'i' : 'I', 'R' : 'R', 'v' : 'V', 'V' : 'VL', 'c' : 'CMD',}

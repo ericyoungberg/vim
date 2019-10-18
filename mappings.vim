@@ -47,8 +47,8 @@ nnoremap <silent> bl :wincmd l<CR> :q<CR>
 
 
 " Buffer Sizing " ----------------->
-nnoremap <silent> <C-LEFT> 5<C-w><
-nnoremap <silent> <C-RIGHT> 5<C-w>>
+nnoremap <silent> <Left> 5<C-w><
+nnoremap <silent> <Right> 5<C-w>>
 
 
 " Movement
