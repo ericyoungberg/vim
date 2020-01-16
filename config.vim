@@ -52,6 +52,7 @@ set nostartofline
 set scrolloff=3
 set switchbuf=useopen
 set backup
+set backupcopy=yes
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
