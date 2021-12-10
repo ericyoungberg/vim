@@ -17,6 +17,8 @@ Plugin 'gmarik/vundle'
 " Plugins
 " ----------->
 
+Plugin 'neoclide/coc.nvim'
+
 Plugin 'nightsense/vimspectr'           " Color scheme for light
 
 " Tools
@@ -43,6 +45,8 @@ Plugin 'mutewinter/vim-autoreadwatch'   " Reload the buffers when changed on dis
 Plugin 'pangloss/vim-javascript'	    " Better JavaScript
 Plugin 'leshill/vim-json'			    " JSON support
 Plugin 'mxw/vim-jsx'                    " JSX support
+Plugin 'leafgarland/typescript-vim'     " Typescript support
+Plugin 'peitalin/vim-jsx-typescript'    " TSX support
 
 " HTML
 Plugin 'vim-scripts/indenthtml.vim'         " Better indent HTML script
