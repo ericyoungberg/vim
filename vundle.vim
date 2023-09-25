@@ -56,9 +56,6 @@ Plugin 'othree/html5.vim'			        " HTML5 omnicomplete and syntax
 " CSS
 Plugin 'tpope/vim-haml'				    " Syntax for Haml and Sass
 
-" C++
-Plugin 'octol/vim-cpp-enhanced-highlight'   " Better syntax highlighting for C++
-
 " C#
 Plugin 'OrangeT/vim-csharp'             " Better syntax highlighting for C#
 
