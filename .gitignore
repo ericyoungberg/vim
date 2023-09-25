@@ -1,0 +1,7 @@
+autoload/*
+backup/*
+plugged/*
+swap/*
+undo/*
+
+*.swp
