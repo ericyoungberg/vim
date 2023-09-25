@@ -20,7 +20,7 @@ vim +PluginInstall +qall &
 # Make directories for backups, swap, and undo files
 echo ""
 echo "----- Creating directories"
-mkdir -p ~/.vim/undo ~/.vim/backup ~/.vim/swap
+mkdir -p ~/.vim/undo ~/.vim/swap
 
 # Expose the .vimrc file
 echo ""

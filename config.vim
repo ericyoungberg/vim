@@ -1,9 +1,84 @@
 " ==============================================================================
-" ==/ -------                                                       -------  \==
+" ==/ -------                                                       -------- \==
 "                             General Configuration
-" ==\ -------                                                       -------  /==
+" ==\ -------                                                       -------- /==
 " ==============================================================================
 
+"
+" ==| -------  1. Global                                            -------- |==
+"
+
+" Don't ask; these things need to happen whether you understand them or not.
 set nocompatible
 set encoding=UTF-8
-set syntax=on
+set backspace=indent,eol,start
+
+
+"
+" ==| -------  2. Sessions                                          -------- |==
+"
+
+" Update buffer if file has been changed outside of Vim
+set autoread
+
+" History swap space
+set directory=~/.vim/swap/
+
+" Extend history
+set history=1000
+
+" Undo that remembers after you close the file
+if has('persistent_undo')
+    set undofile
+    set undodir=~/.vim/undo/
+endif
+
+
+"
+" ==| -------  3. UI                                                -------- |==
+"
+
+" Syntax highlighting
+syntax enable
+
+" Display line numbers
+set number
+
+" Don't wrap lines
+set nowrap
+
+" Don't show what mode we are in; that's Airline's job.
+set noshowmode
+
+" Indicate when we are writing lines more than 80 characters long
+set colorcolumn=80
+highlight ColorColumn ctermbg=235 ctermfg=50 guibg=#222222
+
+
+"
+" ==| -------  4. Formatting                                        -------- |==
+"
+
+" Tabs
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Spaces
+set autoindent
+filetype plugin indent on
+
+
+"
+" ==| -------  5. Plugins                                           -------- |==
+"
+
+" CoC servers don't play well with backup files
+set nobackup
+set nowritebackup
+
+" Enable an additional "Airline" for tabs
+let g:airline#extensions#tabline#enabled=1
+
+" Better path formatting for the above tabline
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'

@@ -1,11 +1,22 @@
 " ==============================================================================
-" ==/ -------                                                       -------  \==
+" ==/ -------                                                       -------- \==
 "                                  Autocommands
-" ==\ -------                                                       -------  /==
+" ==\ -------                                                       -------- /==
 " ==============================================================================
 
 "
-" ==| -------  Plugins                                              -------  |==
+" ==| -------  1. Global                                            -------- |==
+"
+
+" Strip formatting from newlines
+autocmd BufNewFile,BufEnter * set formatoptions-=o
+
+" Strip trailing whitespace from files
+autocmd BufWritePre * silent! :StripTrailingWhiteSpace
+
+
+"
+" ==| -------  2. Plugins                                           -------- |==
 "
 
 " Start NERDTree when Vim is started without file arguments.
