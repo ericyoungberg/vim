@@ -112,3 +112,5 @@ let g:airline#extensions#tabline#enabled=1
 
 " Better path formatting for the above tabline
 let g:airline#extensions#tabline#formatter='unique_tail_improved'
+
+let g:NERDTreeMinimalUI=1

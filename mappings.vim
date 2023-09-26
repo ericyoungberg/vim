@@ -16,10 +16,10 @@ nmap ; :
 vmap ; :
 
 " Rapid vertical scroll with Ctrl key
-nmap <C-j> 15gjzz
-nmap <C-k> 15gkzz
-vmap <C-j> 15gjzz
-vmap <C-k> 15gkzz
+nnoremap <C-j> 15gjzz
+nnoremap <C-k> 15gkzz
+vnoremap <C-j> 15gjzz
+vnoremap <C-k> 15gkzz
 
 " Newlines without insert mode
 nmap go o<Esc>k
@@ -71,10 +71,10 @@ nmap <silent> bl :wincmd l<CR> :q<CR>
 " ==| ------- 3. UI                                                -------- |==
 "
 
-" Toggle Column 80
-nmap <silent> <leader>cw :call ToggleColumn80()<CR>
-vmap <silent> <leader>cw :call ToggleColumn80()<CR>
-imap <silent> <leader>cw :call ToggleColumn80()<CR>
+" Toggle Column 80 Boundary
+nmap <silent> <leader>b :call ToggleColumn80()<CR>
+vmap <silent> <leader>b :call ToggleColumn80()<CR>
+imap <silent> <leader>b :call ToggleColumn80()<CR>
 
 " Toggle spelling mode
 nmap <silent> <leader>s :set spell!<CR>
@@ -83,6 +83,9 @@ nmap <silent> <leader>s :set spell!<CR>
 "
 " ==| ------- 4. Plugins                                           -------- |==
 "
+
+" NERDTree
+nmap <leader>nn :NERDTreeToggle<CR>
 
 " Cursorword
 nmap <silent> <leader>cw :call ToggleCursorWord()<CR>
