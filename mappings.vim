@@ -1,8 +1,8 @@
-" ==============================================================================
-" ==/ -------                                                       -------- \==
+" =============================================================================
+" ==/ -------                                                      -------- \==
 "                                  Mappings
-" ==\ -------                                                       -------- /==
-" ==============================================================================
+" ==\ -------                                                      -------- /==
+" =============================================================================
 
 let mapleader=","
 
@@ -66,14 +66,20 @@ nnoremap <silent> <leader>s :set spell!<CR>
 " Close current window
 nnoremap <silent> <leader>sc :close<CR>
 
-" Toggle List mode to show tabs
-nnoremap <silent> <leader>l :set invlist<CR>
-
-" Toggle 80 column delimiter
-nnoremap <silent> <leader>c :call Toggle80Column()<CR>
-
 
 " Typo Fixes
 " ---------------->
 nnoremap K k
 vnoremap K k
+
+
+"
+" ==| ------- 3. Plugins                                           -------- |==
+"
+
+
+" DelimitMate hotkeys
+nmap <leader>a= :Tabularize /=<CR>
+vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a: :Tabularize /:\zs<CR>
+vmap <leader>a: :Tabularize /:\zs<CR>

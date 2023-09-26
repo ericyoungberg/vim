@@ -1,11 +1,11 @@
-" ==============================================================================
-" ==/ -------                                                       -------- \==
+" =============================================================================
+" ==/ -------                                                      -------- \==
 "                             General Configuration
-" ==\ -------                                                       -------- /==
-" ==============================================================================
+" ==\ -------                                                      -------- /==
+" =============================================================================
 
 "
-" ==| -------  1. Global                                            -------- |==
+" ==| ------- 1. Global                                            -------- |==
 "
 
 " I don't know; these things need to happen whether we understand them or not.
@@ -23,7 +23,7 @@ set iskeyword+=\$,-
 
 
 "
-" ==| -------  2. Sessions                                          -------- |==
+" ==| ------- 2. Sessions                                          -------- |==
 "
 
 " Update buffer if file has been changed outside of Vim
@@ -46,11 +46,15 @@ set clipboard+=unnamed
 
 
 "
-" ==| -------  3. UI                                                -------- |==
+" ==| ------- 3. UI                                                -------- |==
 "
 
 " Syntax highlighting
 syntax enable
+
+" Color scheme
+colorscheme phoenix
+PhoenixPurple
 
 " Display line numbers
 set number
@@ -67,8 +71,12 @@ set nofoldenable
 " Keep cursor in same column during vertical travel
 set nostartofline
 
+" Enable side scrolling
+set sidescroll=1
+
 " Scrolling edge padding
-set scrolloff=4
+set scrolloff=2
+set sidescrolloff=2
 
 " Indicate when we are writing lines more than 80 characters long
 set colorcolumn=80
@@ -76,7 +84,7 @@ highlight ColorColumn ctermbg=235 ctermfg=50 guibg=#222222
 
 
 "
-" ==| -------  4. Formatting                                        -------- |==
+" ==| ------- 4. Formatting                                        -------- |==
 "
 
 " Tabs
@@ -90,7 +98,7 @@ filetype plugin indent on
 
 
 "
-" ==| -------  5. Plugins                                           -------- |==
+" ==| ------- 5. Plugins                                           -------- |==
 "
 
 " CoC servers don't play well with backup files

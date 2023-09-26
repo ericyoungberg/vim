@@ -1,11 +1,11 @@
-" ==============================================================================
-" ==/ -------                                                       -------- \==
+" =============================================================================
+" ==/ -------                                                      -------- \==
 "                                  Autocommands
-" ==\ -------                                                       -------- /==
-" ==============================================================================
+" ==\ -------                                                      -------- /==
+" =============================================================================
 
 "
-" ==| -------  1. Global                                            -------- |==
+" ==| ------- 1. Global                                            -------- |==
 "
 
 " Strip formatting from newlines
@@ -14,9 +14,16 @@ autocmd BufNewFile,BufEnter * set formatoptions-=o
 " Strip trailing whitespace from files
 autocmd BufWritePre * silent! :StripTrailingWhiteSpace
 
+"
+" ==| ------- 2. UI                                                -------- |==
+"
+
+" Resize splits when the window is resized
+autocmd VimResized * :wincmd =
+
 
 "
-" ==| -------  2. Plugins                                           -------- |==
+" ==| ------- 3. Plugins                                           -------- |==
 "
 
 " Start NERDTree when Vim is started without file arguments.
