@@ -7,70 +7,64 @@
 let mapleader=","
 
 
-" Regular Mappings
-" ----------------->
+"
+" ==| ------- 1. Global                                            -------- |==
+"
 
-" Less keystrokes
+" Shiftless command mode
 nmap ; :
 vmap ; :
 
-" Make Y behave like other capitals
-nmap Y y$
-
-" Newlines without insert mode
-nmap go o<Esc>k
-nmap gO O<Esc>j
-
-" Window Movement
-" ----------------->
-nmap <silent> gh :wincmd h<CR>
-nmap <silent> gj :wincmd j<CR>
-nmap <silent> gk :wincmd k<CR>
-nmap <silent> gl :wincmd l<CR>
-
-" Swap buffer
-nmap <silent> bn :bn<CR>
-nmap <silent> bp :bp<CR>
-
-" Delete adjacent windows
-nmap <silent> bh :wincmd h<CR> :q<CR>
-nmap <silent> bj :wincmd j<CR> :q<CR>
-nmap <silent> bk :wincmd k<CR> :q<CR>
-nmap <silent> bl :wincmd l<CR> :q<CR>
-
-" Buffer Sizing 
-" " ----------------->
-nmap <silent> <Left> 5<C-w><
-nmap <silent> <Right> 5<C-w>>
-
-" Movement
-" ----------------->
+" Rapid vertical scroll with Ctrl key
 nmap <C-j> 15gjzz
 nmap <C-k> 15gkzz
 vmap <C-j> 15gjzz
 vmap <C-k> 15gkzz
 
-" Insert Mode
-" ----------------->
+" Newlines without insert mode
+nmap go o<Esc>k
+nmap gO O<Esc>j
+
+" Make Y behave like other capitals
+nmap Y y$
+
+" Spammy insert mode exit
 imap jk <Esc>
 imap JK <Esc>
 imap Jk <Esc>
 imap jK <Esc>
 
-" Leader Mappings
-" ----------------->
-
-" Toggle spelling mode
-nmap <silent> <leader>s :set spell!<CR>
-
-" Close current window
-nmap <silent> <leader>sc :close<CR>
-
-
 " Typo Fixes
-" ---------------->
 nmap K k
 vmap K k
+
+
+"
+" ==| ------- 2. Layout                                            -------- |==
+"
+
+" Tabs next/previous
+nmap <silent> bn :bn<CR>
+nmap <silent> bp :bp<CR>
+
+" Pane left/down/up/right
+nmap <silent> gh :wincmd h<CR>
+nmap <silent> gj :wincmd j<CR>
+nmap <silent> gk :wincmd k<CR>
+nmap <silent> gl :wincmd l<CR>
+
+" Pane resize
+nmap <silent> <Left> 5<C-w><
+nmap <silent> <Right> 5<C-w>>
+
+" Close current pane
+nmap <silent> <leader>cp :close<CR>
+
+" Delete adjacent pane left/down/up/right
+nmap <silent> bh :wincmd h<CR> :q<CR>
+nmap <silent> bj :wincmd j<CR> :q<CR>
+nmap <silent> bk :wincmd k<CR> :q<CR>
+nmap <silent> bl :wincmd l<CR> :q<CR>
 
 
 "
@@ -82,9 +76,12 @@ nmap <silent> <leader>cw :call ToggleColumn80()<CR>
 vmap <silent> <leader>cw :call ToggleColumn80()<CR>
 imap <silent> <leader>cw :call ToggleColumn80()<CR>
 
+" Toggle spelling mode
+nmap <silent> <leader>s :set spell!<CR>
+
 
 "
-" ==| ------- 3. Plugins                                           -------- |==
+" ==| ------- 4. Plugins                                           -------- |==
 "
 
 " Cursorword
