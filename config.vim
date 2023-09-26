@@ -8,10 +8,18 @@
 " ==| -------  1. Global                                            -------- |==
 "
 
-" Don't ask; these things need to happen whether you understand them or not.
+" I don't know; these things need to happen whether we understand them or not.
 set nocompatible
 set encoding=UTF-8
 set backspace=indent,eol,start
+set formatoptions=crql
+
+" Incremental, highlighted, case-sensitive search
+set incsearch
+set hlsearch
+
+" Add special characters to search
+set iskeyword+=\$,-
 
 
 "
@@ -33,6 +41,9 @@ if has('persistent_undo')
     set undodir=~/.vim/undo/
 endif
 
+" Sync clipboard
+set clipboard+=unnamed
+
 
 "
 " ==| -------  3. UI                                                -------- |==
@@ -49,6 +60,15 @@ set nowrap
 
 " Don't show what mode we are in; that's Airline's job.
 set noshowmode
+
+" Disable region folding
+set nofoldenable
+
+" Keep cursor in same column during vertical travel
+set nostartofline
+
+" Scrolling edge padding
+set scrolloff=4
 
 " Indicate when we are writing lines more than 80 characters long
 set colorcolumn=80
@@ -81,4 +101,4 @@ set nowritebackup
 let g:airline#extensions#tabline#enabled=1
 
 " Better path formatting for the above tabline
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#tabline#formatter='unique_tail_improved'
