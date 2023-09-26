@@ -10,11 +10,17 @@ call plug#begin()
 " NERDTree for file browsing
 Plug 'preservim/nerdtree'
 
+" ALE for linting, code-completion, and lookups
+
 " CoC for VSCode-lite
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Airline for a fancier statusline
 Plug 'vim-airline/vim-airline'
+
+" FZF for fuzzy finding. :Ag, :GFiles?, and :Changes are great commands
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Phoenix for the color scheme
 Plug 'widatama/vim-phoenix'

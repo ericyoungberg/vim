@@ -11,72 +11,86 @@ let mapleader=","
 " ----------------->
 
 " Less keystrokes
-nnoremap ; :
-vnoremap ; :
+nmap ; :
+vmap ; :
 
 " Make Y behave like other capitals
-nnoremap Y y$
+nmap Y y$
 
 " Newlines without insert mode
-nnoremap go o<Esc>k
-nnoremap gO O<Esc>j
+nmap go o<Esc>k
+nmap gO O<Esc>j
 
 " Window Movement
 " ----------------->
-nnoremap <silent> gh :wincmd h<CR>
-nnoremap <silent> gj :wincmd j<CR>
-nnoremap <silent> gk :wincmd k<CR>
-nnoremap <silent> gl :wincmd l<CR>
+nmap <silent> gh :wincmd h<CR>
+nmap <silent> gj :wincmd j<CR>
+nmap <silent> gk :wincmd k<CR>
+nmap <silent> gl :wincmd l<CR>
 
 " Swap buffer
-nnoremap <silent> bn :bn<CR>
-nnoremap <silent> bp :bp<CR>
+nmap <silent> bn :bn<CR>
+nmap <silent> bp :bp<CR>
 
 " Delete adjacent windows
-nnoremap <silent> bh :wincmd h<CR> :q<CR>
-nnoremap <silent> bj :wincmd j<CR> :q<CR>
-nnoremap <silent> bk :wincmd k<CR> :q<CR>
-nnoremap <silent> bl :wincmd l<CR> :q<CR>
+nmap <silent> bh :wincmd h<CR> :q<CR>
+nmap <silent> bj :wincmd j<CR> :q<CR>
+nmap <silent> bk :wincmd k<CR> :q<CR>
+nmap <silent> bl :wincmd l<CR> :q<CR>
 
 " Buffer Sizing 
 " " ----------------->
-nnoremap <silent> <Left> 5<C-w><
-nnoremap <silent> <Right> 5<C-w>>
+nmap <silent> <Left> 5<C-w><
+nmap <silent> <Right> 5<C-w>>
 
 " Movement
 " ----------------->
-nnoremap <C-j> 15gjzz
-nnoremap <C-k> 15gkzz
-vnoremap <C-j> 15gjzz
-vnoremap <C-k> 15gkzz
+nmap <C-j> 15gjzz
+nmap <C-k> 15gkzz
+vmap <C-j> 15gjzz
+vmap <C-k> 15gkzz
 
 " Insert Mode
 " ----------------->
-inoremap jk <Esc>
-inoremap JK <Esc>
-inoremap Jk <Esc>
-inoremap jK <Esc>
+imap jk <Esc>
+imap JK <Esc>
+imap Jk <Esc>
+imap jK <Esc>
 
 " Leader Mappings
 " ----------------->
 
 " Toggle spelling mode
-nnoremap <silent> <leader>s :set spell!<CR>
+nmap <silent> <leader>s :set spell!<CR>
 
 " Close current window
-nnoremap <silent> <leader>sc :close<CR>
+nmap <silent> <leader>sc :close<CR>
 
 
 " Typo Fixes
 " ---------------->
-nnoremap K k
-vnoremap K k
+nmap K k
+vmap K k
+
+
+"
+" ==| ------- 3. UI                                                -------- |==
+"
+
+" Toggle Column 80
+nmap <silent> <leader>cw :call ToggleColumn80()<CR>
+vmap <silent> <leader>cw :call ToggleColumn80()<CR>
+imap <silent> <leader>cw :call ToggleColumn80()<CR>
 
 
 "
 " ==| ------- 3. Plugins                                           -------- |==
 "
 
+" Cursorword
+nmap <silent> <leader>cw :call ToggleCursorWord()<CR>
+vmap <silent> <leader>cw :call ToggleCursorWord()<CR>
+imap <silent> <leader>cw :call ToggleCursorWord()<CR>
 
 " DelimitMate hotkeys
 nmap <leader>a= :Tabularize /=<CR>

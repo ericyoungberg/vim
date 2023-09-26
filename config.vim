@@ -21,7 +21,6 @@ set hlsearch
 " Add special characters to search
 set iskeyword+=\$,-
 
-
 "
 " ==| ------- 2. Sessions                                          -------- |==
 "
@@ -100,6 +99,9 @@ filetype plugin indent on
 "
 " ==| ------- 5. Plugins                                           -------- |==
 "
+
+" Turn-off Cursorword on start, toggle with <leader>cw
+let g:cursorword=0
 
 " CoC servers don't play well with backup files
 set nobackup
