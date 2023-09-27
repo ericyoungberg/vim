@@ -48,12 +48,15 @@ set clipboard+=unnamed
 " ==| ------- 3. UI                                                -------- |==
 "
 
+set background=dark
+
 " Syntax highlighting
 syntax enable
 
 " Color scheme
-colorscheme phoenix
-PhoenixPurple
+colorscheme hybrid
+"colorscheme phoenix
+"PhoenixPurple
 
 " Display line numbers
 set number
