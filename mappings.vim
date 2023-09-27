@@ -84,6 +84,14 @@ nmap <silent> <leader>s :set spell!<CR>
 " ==| ------- 4. Plugins                                           -------- |==
 "
 
+" CoC
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <leader>rn <Plug>(coc-rename)
+
 " NERDTree
 nmap <leader>nn :NERDTreeToggle<CR>
 

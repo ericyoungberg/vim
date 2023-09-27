@@ -13,6 +13,9 @@ call plug#begin()
 
 " CoC for code-completion, linting, and autoformatting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = [
+    \ 'coc-tsserver'
+\ ]
 
 " NERDTree for file browsing
 Plug 'preservim/nerdtree'
