@@ -50,7 +50,7 @@ Plug 'itchyny/vim-cursorword'
 "
 
 " Phoenix for the color scheme
-"Plug 'widatama/vim-phoenix'
+Plug 'widatama/vim-phoenix'
 
 " Syntax Higlighters
 Plug 'pangloss/vim-javascript'

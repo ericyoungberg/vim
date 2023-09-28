@@ -21,6 +21,7 @@ set hlsearch
 " Add special characters to search
 set iskeyword+=\$,-
 
+
 "
 " ==| ------- 2. Sessions                                          -------- |==
 "
@@ -49,14 +50,15 @@ set clipboard+=unnamed
 "
 
 set background=dark
+set t_Co=256
 
 " Syntax highlighting
 syntax enable
 
 " Color scheme
-colorscheme hybrid
-"colorscheme phoenix
-"PhoenixPurple
+"colorscheme monokai
+colorscheme phoenix
+PhoenixBlue
 
 " Display line numbers
 set number
@@ -116,4 +118,9 @@ let g:airline#extensions#tabline#enabled=1
 " Better path formatting for the above tabline
 let g:airline#extensions#tabline#formatter='unique_tail_improved'
 
+" NERDTree - just the tree
 let g:NERDTreeMinimalUI=1
+
+" Change the CWD whenever you change directories in NERDTree
+" Useful for dropping out for a couple commands and using the FZF plugin
+let g:NERDTreeChDirMode=2
