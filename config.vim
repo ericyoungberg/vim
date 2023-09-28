@@ -108,15 +108,22 @@ let g:cursorword=0
 set nobackup
 set nowritebackup
 
-" Enable an additional "Airline" for tabs
-let g:airline#extensions#tabline#enabled=1
-
-" Better path formatting for the above tabline
-let g:airline#extensions#tabline#formatter='unique_tail_improved'
-
 " NERDTree - just the tree
 let g:NERDTreeMinimalUI=1
 
 " Change the CWD whenever you change directories in NERDTree
 " Useful for dropping out for a couple commands and using the FZF plugin
 let g:NERDTreeChDirMode=2
+
+" Keep Airline minimal
+let g:airline_theme='minimalist'
+
+" Arrows are cool
+let g:airline_powerline_fonts = 1
+
+" Enable an additional "Airline" for tabs
+let g:airline#extensions#tabline#enabled=1
+
+" Better path formatting for the above tabline
+let g:airline#extensions#tabline#formatter='unique_tail_improved'
+
