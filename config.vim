@@ -49,16 +49,12 @@ set clipboard+=unnamed
 " ==| ------- 3. UI                                                -------- |==
 "
 
-set background=dark
-set t_Co=256
-
 " Syntax highlighting
 syntax enable
 
 " Color scheme
-"colorscheme monokai
 colorscheme phoenix
-PhoenixBlue
+PhoenixRed
 
 " Display line numbers
 set number

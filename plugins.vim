@@ -49,9 +49,6 @@ Plug 'itchyny/vim-cursorword'
 " ==| ------- 3. Theme                                             -------- |==
 "
 
-" Phoenix for the color scheme
-Plug 'widatama/vim-phoenix'
-
 " Syntax Higlighters
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'

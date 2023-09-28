@@ -28,6 +28,12 @@ else
   let s:background = ""
 endif
 
+if exists("g:phoenix_invert_match_paren")
+  let s:invert_match_paren = 1
+else
+  let s:invert_match_paren = 0
+endif
+
 
 " ============================================================================
 " Colors
@@ -208,6 +214,9 @@ hi Visual                     guifg=#EFEFEF guibg=#515151 gui=NONE      ctermfg=
 hi VisualNOS                  guifg=#EFEFEF guibg=#515151 gui=NONE      ctermfg=255   ctermbg=008
 hi IncSearch                  guifg=#EFEFEF guibg=#64B2DB gui=NONE      ctermfg=255   ctermbg=039
 hi MatchParen                 guifg=#191919 guibg=#40BDFF gui=NONE      ctermfg=235   ctermbg=039
+if s:invert_match_paren
+  hi MatchParen               guifg=#40BDFF guibg=NONE    gui=NONE      ctermfg=039   ctermbg=NONE
+endif
 hi Search                     guifg=#EFEFEF guibg=#40BDFF gui=NONE      ctermfg=255   ctermbg=039
 hi Error                      guifg=#FF3D23 guibg=NONE    gui=bold      ctermfg=009   ctermbg=NONE
 hi Todo                       guifg=#DEDD5A guibg=NONE    gui=bold      ctermfg=226   ctermbg=NONE
@@ -219,30 +228,45 @@ endif
 if s:accent == "red"
   hi IncSearch                guifg=#EFEFEF guibg=#C5282F gui=NONE      ctermfg=255   ctermbg=001
   hi MatchParen               guifg=#191919 guibg=#FF3D23 gui=NONE      ctermfg=235   ctermbg=001
+  if s:invert_match_paren
+    hi MatchParen             guifg=#FF3D23 guibg=NONE    gui=NONE      ctermfg=001   ctermbg=NONE
+  endif
   hi Search                   guifg=#FFFFFF guibg=#FF3D23 gui=NONE      ctermfg=255   ctermbg=001
 endif
 
 if s:accent == "green"
   hi IncSearch                guifg=#191919 guibg=#65910F gui=NONE      ctermfg=255   ctermbg=002
   hi MatchParen               guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
+  if s:invert_match_paren
+    hi MatchParen             guifg=#87BF19 guibg=NONE    gui=NONE      ctermfg=002   ctermbg=NONE
+  endif
   hi Search                   guifg=#191919 guibg=#87BF19 gui=NONE      ctermfg=235   ctermbg=002
 endif
 
 if s:accent == "yellow"
   hi IncSearch                guifg=#191919 guibg=#C3BA4D gui=NONE      ctermfg=255   ctermbg=226
   hi MatchParen               guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
+  if s:invert_match_paren
+    hi MatchParen             guifg=#DEDD5A guibg=NONE    gui=NONE      ctermfg=226   ctermbg=NONE
+  endif
   hi Search                   guifg=#191919 guibg=#DEDD5A gui=NONE      ctermfg=235   ctermbg=226
 endif
 
 if s:accent == "orange"
   hi IncSearch                guifg=#FFFFFF guibg=#FBBE1C gui=NONE      ctermfg=255   ctermbg=208
   hi MatchParen               guifg=#191919 guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
+  if s:invert_match_paren
+    hi MatchParen             guifg=#C88623 guibg=NONE    gui=NONE      ctermfg=208   ctermbg=NONE
+  endif
   hi Search                   guifg=#FFFFFF guibg=#C88623 gui=NONE      ctermfg=235   ctermbg=208
 endif
 
 if s:accent == "purple"
   hi IncSearch                guifg=#FFFFFF guibg=#D1AFDD gui=NONE      ctermfg=255   ctermbg=013
   hi MatchParen               guifg=#191919 guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
+  if s:invert_match_paren
+    hi MatchParen             guifg=#B294BB guibg=NONE    gui=NONE      ctermfg=013   ctermbg=NONE
+  endif
   hi Search                   guifg=#FFFFFF guibg=#B294BB gui=NONE      ctermfg=235   ctermbg=013
 endif
 
@@ -268,22 +292,22 @@ hi ColorColumn                guifg=#CCCCCC guibg=#292929 gui=bold      ctermfg=
 hi Pmenu                      guifg=#EFEFEF guibg=#191919 gui=NONE      ctermfg=255   ctermbg=000
 hi PmenuSel                   guifg=#EFEFEF guibg=#40BDFF gui=NONE      ctermfg=255   ctermbg=039
 hi PmenuThumb                 guifg=#EFEFEF guibg=#40BDFF gui=NONE      ctermfg=255   ctermbg=039
-hi StatusLine                 guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=250   ctermbg=NONE
-hi StatusLineNC               guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=250   ctermbg=NONE
-hi CursorLineNr               guifg=#CCCCCC guibg=#292929 gui=bold      ctermfg=255   ctermbg=NONE    cterm=bold
+hi StatusLine                 guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=000   ctermbg=250
+hi StatusLineNC               guifg=#555555 guibg=NONE    gui=NONE      ctermfg=000   ctermbg=246
+hi CursorLineNr               guifg=#DDDDDD guibg=#191919 gui=bold      ctermfg=255   ctermbg=NONE    cterm=bold
 hi TabLine                    guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=250   ctermbg=NONE    cterm=NONE
 hi TabLineFill                guifg=#CCCCCC guibg=NONE    gui=NONE      ctermfg=250   ctermbg=NONE    cterm=NONE
 hi FoldColumn                 guifg=#191919 guibg=#40BDFF gui=NONE      ctermfg=235   ctermbg=039
 hi Folded                     guifg=#191919 guibg=#40BDFF gui=NONE      ctermfg=235   ctermbg=039
-hi LineNr                     guifg=#6A6A6A guibg=#0F0F0F gui=NONE      ctermfg=245   ctermbg=000
+hi LineNr                     guifg=#6A6A6A guibg=#191919 gui=NONE      ctermfg=245   ctermbg=NONE
 hi SignColumn                 guifg=#EFEFEF guibg=NONE    gui=NONE      ctermfg=255   ctermbg=NONE
-hi VertSplit                  guifg=#AAAAAA guibg=NONE    gui=NONE      ctermfg=246   ctermbg=000
+hi VertSplit                  guifg=#555555 guibg=NONE    gui=NONE      ctermfg=000   ctermbg=246
 hi WildMenu                   guifg=#191919 guibg=#40BDFF gui=NONE      ctermfg=235   ctermbg=039
 hi OverLength                 guifg=NONE    guibg=#20272F gui=NONE      ctermfg=NONE  ctermbg=018
 
 if s:background == "eighties"
-  hi CursorLineNr             guifg=#CCCCCC guibg=#111111 gui=bold      ctermfg=255   ctermbg=NONE    cterm=bold
-  hi LineNr                   guifg=#6A6A6A guibg=#2D2D2D gui=NONE      ctermfg=245   ctermbg=232
+  hi CursorLineNr             guifg=#CCCCCC guibg=#2D2D2D gui=bold      ctermfg=255   ctermbg=NONE    cterm=bold
+  hi LineNr                   guifg=#6A6A6A guibg=#2D2D2D gui=NONE      ctermfg=245   ctermbg=NONE
 endif
 
 if s:accent == "red"
@@ -406,6 +430,7 @@ hi link                       markdownCodeBlock           PreProc
 
 let g:phoenix_acc = ""
 let g:phoenix_bg = ""
+let g:phoenix_invert_match_paren = 0
 
 function! SetPhoenix(background, accent)
   let g:phoenix_bg = a:background
