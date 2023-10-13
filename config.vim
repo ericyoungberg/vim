@@ -54,7 +54,7 @@ syntax enable
 
 " Color scheme
 colorscheme phoenix
-PhoenixRed
+PhoenixPurple
 
 " Display line numbers
 set number
@@ -79,7 +79,7 @@ set scrolloff=2
 set sidescrolloff=2
 
 " Indicate when we are writing lines more than 80 characters long
-set colorcolumn=80
+set colorcolumn=0
 highlight ColorColumn ctermbg=235 ctermfg=50 guibg=#222222
 
 
@@ -114,9 +114,6 @@ let g:NERDTreeMinimalUI=1
 " Change the CWD whenever you change directories in NERDTree
 " Useful for dropping out for a couple commands and using the FZF plugin
 let g:NERDTreeChDirMode=2
-
-" Keep Airline minimal
-let g:airline_theme='minimalist'
 
 " Arrows are cool
 let g:airline_powerline_fonts = 1

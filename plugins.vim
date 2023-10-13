@@ -53,7 +53,6 @@ Plug 'itchyny/vim-cursorword'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
-Plug 'elzr/vim-json'
 Plug 'tikhomirov/vim-glsl'
 Plug 'plasticboy/vim-markdown'
 
