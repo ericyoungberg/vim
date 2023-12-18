@@ -90,7 +90,7 @@ highlight ColorColumn ctermbg=235 ctermfg=50 guibg=#222222
 " Tabs
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set noexpandtab
 
 " Spaces
 set autoindent

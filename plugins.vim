@@ -44,6 +44,9 @@ Plug 'tpope/vim-sleuth'
 " Cursorword for highlighting other instances of names inside file
 Plug 'itchyny/vim-cursorword'
 
+" Terraform support + syntax highlighting
+Plug 'hashivim/vim-terraform'
+
 
 "
 " ==| ------- 3. Theme                                             -------- |==
