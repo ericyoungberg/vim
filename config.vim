@@ -8,7 +8,7 @@
 " ==| ------- 1. Global                                            -------- |==
 "
 
-" I don't know; these things need to happen whether we understand them or not.
+" I don't know; these things need to happen whether I understand them or not.
 set nocompatible
 set encoding=UTF-8
 set backspace=indent,eol,start
@@ -20,6 +20,10 @@ set hlsearch
 
 " Add special characters to search
 set iskeyword+=\$,-
+
+" Set terminal
+set term=xterm
+set t_Co=256
 
 
 "
@@ -52,9 +56,14 @@ set clipboard+=unnamed
 " Syntax highlighting
 syntax enable
 
+if !has('gui_running') && &term =~ '\%(screen\|tmux\)'
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+
 " Color scheme
-colorscheme phoenix
-PhoenixPurple
+"colorscheme phoenix
+"PhoenixPurple
 
 " Display line numbers
 set number
