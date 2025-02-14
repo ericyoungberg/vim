@@ -88,9 +88,9 @@ highlight ColorColumn ctermbg=235 ctermfg=50 guibg=#222222
 "
 
 " Tabs
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 
 " Spaces
