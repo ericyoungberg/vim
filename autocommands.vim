@@ -14,6 +14,9 @@ autocmd BufNewFile,BufEnter * set formatoptions-=o
 " Strip trailing whitespace from files
 autocmd BufWritePre * silent! :StripTrailingWhiteSpace
 
+" Refresh buffer when changing buffers
+au FocusGained,BufEnter * :checktime
+
 "
 " ==| ------- 2. UI                                                -------- |==
 "

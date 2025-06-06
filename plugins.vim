@@ -24,7 +24,6 @@ Plug 'preservim/nerdtree'
 " Airline for a fancier statusline
 Plug 'vim-airline/vim-airline'
 
-
 "
 " ==| ------- 2. Functionality                                     -------- |==
 "
